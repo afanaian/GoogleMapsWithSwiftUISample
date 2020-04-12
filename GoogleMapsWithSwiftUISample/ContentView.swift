@@ -10,7 +10,12 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, World!")
+        VStack {
+            GoogleMapsView()
+                .edgesIgnoringSafeArea(.top)
+                .frame(height: 300)
+            PlacesList()
+        }
     }
 }
 

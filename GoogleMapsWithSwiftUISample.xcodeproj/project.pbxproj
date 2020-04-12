@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,6 +14,11 @@
 		5E82F2282443751E0001DD0B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E82F2272443751E0001DD0B /* Preview Assets.xcassets */; };
 		5E82F22B2443751E0001DD0B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E82F2292443751E0001DD0B /* LaunchScreen.storyboard */; };
 		5E82F2362443751E0001DD0B /* GoogleMapsWithSwiftUISampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E82F2352443751E0001DD0B /* GoogleMapsWithSwiftUISampleTests.swift */; };
+		5E82F24124437A780001DD0B /* GoogleMapsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E82F24024437A780001DD0B /* GoogleMapsView.swift */; };
+		5E82F24324437E6A0001DD0B /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E82F24224437E6A0001DD0B /* LocationManager.swift */; };
+		5E82F2452443827B0001DD0B /* PlacesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E82F2442443827B0001DD0B /* PlacesManager.swift */; };
+		5E82F247244384140001DD0B /* PlacesList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E82F246244384140001DD0B /* PlacesList.swift */; };
+		5E82F249244385200001DD0B /* PlaceRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E82F248244385200001DD0B /* PlaceRow.swift */; };
 		9381BA2B89DDE772368B5637 /* Pods_GoogleMapsWithSwiftUISample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E8819A2096433939E909819 /* Pods_GoogleMapsWithSwiftUISample.framework */; };
 /* End PBXBuildFile section */
 
@@ -40,6 +45,11 @@
 		5E82F2312443751E0001DD0B /* GoogleMapsWithSwiftUISampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GoogleMapsWithSwiftUISampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E82F2352443751E0001DD0B /* GoogleMapsWithSwiftUISampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleMapsWithSwiftUISampleTests.swift; sourceTree = "<group>"; };
 		5E82F2372443751E0001DD0B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5E82F24024437A780001DD0B /* GoogleMapsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleMapsView.swift; sourceTree = "<group>"; };
+		5E82F24224437E6A0001DD0B /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		5E82F2442443827B0001DD0B /* PlacesManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesManager.swift; sourceTree = "<group>"; };
+		5E82F246244384140001DD0B /* PlacesList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesList.swift; sourceTree = "<group>"; };
+		5E82F248244385200001DD0B /* PlaceRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceRow.swift; sourceTree = "<group>"; };
 		9E8819A2096433939E909819 /* Pods_GoogleMapsWithSwiftUISample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GoogleMapsWithSwiftUISample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C48B4B512674EE866DBD7AB3 /* Pods-GoogleMapsWithSwiftUISample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoogleMapsWithSwiftUISample.release.xcconfig"; path = "Target Support Files/Pods-GoogleMapsWithSwiftUISample/Pods-GoogleMapsWithSwiftUISample.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -97,6 +107,11 @@
 				5E82F21E2443751B0001DD0B /* AppDelegate.swift */,
 				5E82F2202443751B0001DD0B /* SceneDelegate.swift */,
 				5E82F2222443751B0001DD0B /* ContentView.swift */,
+				5E82F24024437A780001DD0B /* GoogleMapsView.swift */,
+				5E82F2442443827B0001DD0B /* PlacesManager.swift */,
+				5E82F24224437E6A0001DD0B /* LocationManager.swift */,
+				5E82F246244384140001DD0B /* PlacesList.swift */,
+				5E82F248244385200001DD0B /* PlaceRow.swift */,
 				5E82F2242443751E0001DD0B /* Assets.xcassets */,
 				5E82F2292443751E0001DD0B /* LaunchScreen.storyboard */,
 				5E82F22C2443751E0001DD0B /* Info.plist */,
@@ -128,7 +143,6 @@
 				4262FBFAB8EF4308C90819D7 /* Pods-GoogleMapsWithSwiftUISample.debug.xcconfig */,
 				C48B4B512674EE866DBD7AB3 /* Pods-GoogleMapsWithSwiftUISample.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -277,9 +291,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E82F24124437A780001DD0B /* GoogleMapsView.swift in Sources */,
 				5E82F21F2443751B0001DD0B /* AppDelegate.swift in Sources */,
+				5E82F24324437E6A0001DD0B /* LocationManager.swift in Sources */,
 				5E82F2212443751B0001DD0B /* SceneDelegate.swift in Sources */,
 				5E82F2232443751B0001DD0B /* ContentView.swift in Sources */,
+				5E82F2452443827B0001DD0B /* PlacesManager.swift in Sources */,
+				5E82F249244385200001DD0B /* PlaceRow.swift in Sources */,
+				5E82F247244384140001DD0B /* PlacesList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -434,13 +453,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"GoogleMapsWithSwiftUISample/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = GoogleMapsWithSwiftUISample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = Practice.Practice.MoonWork.GoogleMapsWithSwiftUISample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -454,13 +473,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"GoogleMapsWithSwiftUISample/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = GoogleMapsWithSwiftUISample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = Practice.Practice.MoonWork.GoogleMapsWithSwiftUISample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
