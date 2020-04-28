@@ -5,5 +5,5 @@ https://medium.com/@alexfanaian/how-to-use-googlemaps-sdk-with-swiftui-3d44089b7
 
 To run: 
 1. Download the project.
-2. Run a pod install in the current project directory. More info here: https://guides.cocoapods.org/using/using-cocoapods.html
+2. Run a pod (sorry Google doesn't support SPM yet) install in the current project directory. More info here: https://guides.cocoapods.org/using/using-cocoapods.html
 3. Open .xcworkspace extension.
